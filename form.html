@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+</head>
+<body>
+    <h4>创建密码字段</h4>
+    <form action="">
+        Username: <input type="text" name="user"><br>
+        Password: <input type="password" name="password">
+    </form>
+
+    <h4>单选按钮</h4>
+    <form action="">
+        <input type="radio" name="sex" value="male">男<br>
+        <input type="radio" name="sex" value="female">女
+    </form>
+
+    <h4>多选按钮</h4>
+    <form action="">
+        <input type="checkbox" name="food" value="Pizza">披萨<br>
+        <input type="checkbox" name="food" value="Rice">米饭<br>
+        <input type="checkbox" name="food" value="Noodles">面条 
+    </form>
+
+    <h4>下拉框</h4>
+    <form action="">
+        <select name="food">
+        <option value="Delicious">美味</option>
+        <option value="Pizza">披萨</option>
+        <option value="Rice">米饭</option>
+        <option value="Noodles">面条</option>
+        </select>
+    </form>
+
+    <h4>预选下拉框</h4>
+    <form action="">
+        <select name="food">
+        <option value="Pizza">披萨</option>
+        <option value="Steak">牛排</option>
+        <option value="Rice" selected>米饭</option>
+        <option value="Noodles">面条</option>
+        </select>
+    </form>
+
+    <h4>文本域</h4>
+    <textarea rows="10" cols="30">
+        文本框
+    </textarea>
+
+    <h4>按钮</h4>
+    <form action="">
+        <input type="submit" value="晚安">
+    </form>
+
+    <h4>带边框的表单</h4>
+    <!-- <fieldset>	定义了一组相关的表单元素，并使用外框包含起来
+         <legend>	定义了 <fieldset> 元素的标题 -->
+
+    <form action="">
+        <fieldset>
+        <legend>个人信息:</legend>
+        Name: <input type="text" size="30"><br>
+        Age: <input type="text" size="30"><br>
+        Telephone: <input type="text" size="10">
+        </fieldset>
+    </form>
+
+    <h3>发送邮件到 someone@example.com:</h3>
+
+    <form action="MAILTO:someone@example.com" method="post" enctype="text/plain">
+        Name:<br>
+        <input type="text" name="name" value="your name"><br>
+        E-mail:<br>
+        <input type="text" name="mail" value="your email"><br>
+        Comment:<br>
+        <input type="text" name="comment" value="your comment" size="50"><br><br>
+        <input type="submit" value="发送">
+        <input type="reset" value="重置">
+    </form>
+</body>
+</html>
