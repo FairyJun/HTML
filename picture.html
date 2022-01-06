@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图像</title>
+</head>
+<body>
+    <!--排列  -->
+    <h5>第一行</h5>
+    <p>这是一张图片。 <img src="images/baby.jfif" alt="cute" align="middle" width="100" height="100"> 圣诞小孩</p>
+
+    <h5>第二行</h5>
+    <p>这是一张图片。 <img src="images/baby.jfif" alt="cute" align="middle" width="100" height="100">圣诞小孩</p>
+
+    <h5>第三行</h5>
+    <p>这是一张图片。 <img src="images/baby.jfif" alt="cute" align="middle" width="100" height="100">圣诞小孩</p>
+
+    <hr>
+    <!-- 浮动 -->
+    <p>
+        <img src="images/baby.jfif" alt="cute" style="float:left" width="100" height="100"> 带图片的段落，图片浮动在这个文本的左边。
+    </p>
+        ​
+    <p>
+        <img src="images/baby.jfif" alt="cute" style="float:right" width="100" height="100"> 带图片的段落，图片浮动在这个文本的右边。
+    </p>
+
+    <hr>
+    <!-- 设置图片链接 -->
+    <p>创建图片链接:
+        <a href="https://www.baidu.com/">
+        <img  border="10" src="images/baby.jfif" alt="有问题找度娘" width="100" height="100"></a></p>
+        
+        <p>无边框的图片链接:
+        <a href="https://www.baidu.com/">
+        <img border="0" src="images/baby.jfif" alt="有问题找度娘" width="100" height="100"></a></p>
+
+    <hr>
+    <!-- 创建图像映射 -->
+    <!--创建带有可供点击区域的图像地图。其中的每个区域都是一个超级链接。-->
+    <p>点击帽子或脸颊，注意变化：</p>
+
+<img src="images/baby.jfif" width="145" height="126" alt="cute" usemap="#cute">
+
+<map name="cute">
+  <area shape="rect" coords="0,0,82,126" alt="Cap" href="cap.htm">
+</map>
+
+
+
+</body>
+</html>

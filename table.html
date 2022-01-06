@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格</title>
+</head>
+<body>
+    <h4>一列:</h4>
+    <!-- tr行，td列，th表头 -->
+    <table border="1">
+        <tr>
+            <td>100</td>
+        </tr>
+    </table>
+
+    <h4>一行四列:</h4>
+    <table border="1">
+        <tr>
+            <td>100</td>
+            <td>200</td>
+            <td>300</td>
+            <td>400</td>
+        </tr>
+    </table>
+    <h4>这个表格没有边框(没有定义border):</h4>
+    <table>
+        <tr>
+            <td>100</td>
+            <td>200</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>400</td>
+            <td>500</td>
+            <td>600</td>
+        </tr>
+        </table>
+
+        <h4>这个表格没有边框（定义border为0）:</h4>
+        <table border="0">
+        <tr>
+            <td>100</td>
+            <td>200</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>400</td>
+            <td>500</td>
+            <td>600</td>
+        </tr>
+    </table>
+    <h4>水平标题:</h4>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Sex</th>
+        </tr>
+        <tr>
+            <td>懒羊羊</td>
+            <td>8</td>
+            <td>male</td>
+        </tr>
+    </table>
+
+    <h4>垂直标题:</h4>
+    <table border="1">
+        <tr>
+            <th>Name:</th>
+            <td>美羊羊</td>
+        </tr>
+        <tr>
+            <th>Age:</th>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>Sex:</th>
+            <td>female</td>
+        </tr>
+    </table>
+    <h4>带标题 (caption) 的表格</h4>
+    <table border="1">
+        <caption>vocabulary</caption>
+        <tr>
+          <th>grade</th>
+          <th>vocabulary</th>
+        </tr>
+        <tr>
+          <td>freshman</td>
+          <td>3500</td>
+        </tr>
+        <tr>
+          <td>undergraduate</td>
+          <td>5500</td>
+        </tr>
+    </table>
+    
+    <!-- 跨行或者跨列的表格/单元格 -->
+    <h4>单元格跨两列:</h4>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Telephone</th>
+        </tr>
+        <tr>
+            <td>喜羊羊</td>
+            <td>12345678</td>
+            <td>87654321</td>
+        </tr>
+    </table>
+
+    <h4>单元格跨两行:</h4>
+    <table border="1">
+        <tr>
+            <th>First Name:</th>
+            <td>灰太狼</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telephone:</th>
+            <td>23456789</td>
+        </tr>
+        <tr>
+            <td>98765432</td>
+        </tr>
+    </table>
+
+    <!--表格内显示不同元素的标签-->
+    <table border="1">
+        <tr>
+          <td>
+           <p>这是一个段落</p>
+           <p>这是另一个段落</p>
+          </td>
+          <td>这个单元格包含一个表格:
+           <table>
+           <tr>
+             <td>A</td>
+             <td>B</td>
+           </tr>
+           <tr>
+             <td>C</td>
+             <td>D</td>
+           </tr>
+           </table>
+          </td>
+        </tr>
+        <tr>
+          <td>这个单元格包含一个列表
+           <ul>
+            <li>Firstly</li>
+            <li>Secondly</li>
+            <li>Finally</li>
+           </ul>
+          </td>
+          <td>
+              <img src="images/baby.jfif" width="100" height="100">
+          </td>
+        </tr>
+    </table>
+
+    <!-- 使用 Cell padding 来创建单元格内容与其边框之间的空白 -->
+    <h4>没有单元格边距:</h4>
+    <table border="1">
+        <tr>
+            <td>One</td>
+            <td>Three</td>
+        </tr>   
+        <tr>
+            <td>Two</td>
+            <td>Four</td>
+        </tr>
+    </table>
+
+    <h4>有单元格边距:</h4>
+    <table border="1" cellpadding="10">
+        <tr>
+            <td>One</td>
+            <td>Three</td>
+        </tr>   
+        <tr>
+            <td>Two</td>
+            <td>Four</td>
+        </tr>
+    </table>
+
+    <!-- Cell spacing 增加单元格之间的距离 -->
+    <h4>没有单元格间距:</h4>
+    <table border="1">
+        <tr>
+            <td>One</td>
+            <td>Three</td>
+        </tr>   
+        <tr>
+            <td>Two</td>
+            <td>Four</td>
+        </tr>
+    </table>
+
+    <h4>单元格间距="0":</h4>
+    <table border="1" cellspacing="0">
+        <tr>
+            <td>One</td>
+            <td>Three</td>
+        </tr>   
+        <tr>
+            <td>Two</td>
+            <td>Four</td>
+        </tr>
+    </table>
+
+    <h4>单元格间距="5":</h4>
+    <table border="1" cellspacing="5">
+        <tr>
+            <td>One</td>
+            <td>Three</td>
+        </tr>   
+        <tr>
+            <td>Two</td>
+            <td>Four</td>
+        </tr>
+    </table>
+</body>
+</html>
